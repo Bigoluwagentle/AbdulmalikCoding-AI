@@ -1,0 +1,212 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@import url('https://fonts.googleapis.com/css2?family=Winky+Rough:ital,wght@0,300..900;1,300..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+body{
+    background-color: #134544;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header {
+    text-align: center;
+    padding: 20px 0px;
+}
+header h3 {
+    font-size: 2.5rem;
+    color: #fff;
+    font-family: "Winky Rough", sans-serif;
+}
+header h3 span {
+    font-style: italic;
+}
+
+main {
+    margin: 70px auto;
+    width: 80%;
+    text-align: center;
+    font-family: "Inter", sans-serif;
+    color: #f3f0f0;
+    max-width: 700px;
+}
+
+main > form {
+    max-width: 700px;
+    margin: 10px auto;
+    position: sticky;
+    bottom: 0px;
+    background-color: #134544;
+    padding-bottom: 50px;
+}
+form > div {
+    background-color: #011a19;
+    border-radius: 35px;
+    padding-right: 20px;
+}
+form input {
+    width: 100%;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    color: #fff;
+    padding: 20px;
+    font-family: "Inter", sans-serif;
+    font-size: 1rem;
+}
+main p {
+    margin: 20px auto;
+    max-width: 700px;
+}
+.fa-solid {
+    font-size: 1.5rem;
+    padding: 5px;
+    margin-right: 5px;
+    cursor: pointer;
+}
+.fa-solid.fa-arrow-up {
+    background-color: #033a39;
+    border-radius: 50%;
+    padding-left: 7px 10px;
+    margin-right: 0px;
+}
+
+.fa-solid.fa-arrow-up.active {
+    background-color: #065e5c;
+}
+.fa-solid.fa-arrow-up.active:hover {
+    background-color: #065e5c;
+}
+.chats {
+    margin-top: 30px;
+   
+}
+.que{
+  background-color: #011A19;
+}
+.chat-container .flex > div{
+    /* color: #fff; */
+    max-width: 500px;
+    margin: 10px 0px;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: left;
+    overflow-wrap: break-word;
+    white-space: wrap;
+    > p{
+      white-space: wrap;
+      width: 700px;
+      > Markdown{
+        color: cyan;
+        white-space: wrap;
+        width: 700px;
+      }
+    }
+}
+.chat-container .flex ul, ol {
+    list-style-position: inside;
+}
+
+.flex.question {
+    justify-content: flex-end;
+}
+
+.flex-question > div {
+    background-color: #011615c7;
+}
+
+.wave-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 30px;
+    margin-top: 20px;
+    gap: 6px;
+    padding: 30px 0px;
+    padding-left: 100px;
+    padding-bottom: 10px;
+  }
+  .wave {
+    width: 6px;
+    height: 15px;
+    background: #fff;
+    border-radius: 4px;
+    animation: bounce 1s infinite ease-in-out;
+  }
+  .wave:nth-child(1) {
+    animation-delay: 0s;
+  }
+  .wave:nth-child(2) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(3) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(4) {
+    animation-delay: 0.6s;
+  }
+  .wave:nth-child(5) {
+    animation-delay: 0.8s;
+  }
+  .wave:nth-child(6) {
+    animation-delay: 0.2s;
+  }
+  .wave:nth-child(7) {
+    animation-delay: 0.4s;
+  }
+  .wave:nth-child(8) {
+    animation-delay: 0.6s;
+  }
+  @keyframes bounce {
+    0%, 100% {
+      height: 15px;
+    }
+    50% {
+      height: 30px;
+    }
+  }
+  /* Works in Chrome/Edge/Safari */
+audio::-webkit-media-controls-panel {
+    background-color: #011A19 !important;
+    color: white;
+    border-radius: 8px;
+  }
+  audio::-webkit-media-controls-play-button,
+  audio::-webkit-media-controls-timeline,
+  audio::-webkit-media-controls-volume-slider,
+  audio::-webkit-media-controls-mute-button,
+  audio::-webkit-media-controls-current-time-display,
+  audio::-webkit-media-controls-time-remaining-display {
+    filter: invert(100%) brightness(200%);
+  }
+  /* For Firefox — workaround */
+  audio {
+    background-color: #011A19;
+    color: white;
+    border-radius: 8px;
+  }
+
+   /* loader style  */
+   #loader {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    border: 5px solid #28918a;
+    border-radius: 50%;
+    border-right-color: #f3f0f0;
+    animation: rotate 0.3s infinite linear;
+   }
+
+   @keyframes rotate {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+   }

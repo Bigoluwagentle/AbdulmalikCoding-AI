@@ -1,0 +1,72 @@
+.api-response-container {
+    font-family: 'Segoe UI', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.7;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    max-width: 700px;
+    margin: 20px auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.intro-text {
+    margin-bottom: 15px;
+    color: #333;
+    font-size: 1.1em;
+}
+
+.list-prompt {
+    font-weight: bold;
+    margin-top: 15px;
+    margin-bottom: 10px;
+    color: #2c3e50;
+}
+
+.meaning-list {
+    list-style-type: disc;
+    padding-left: 30px;
+    margin-bottom: 15px;
+}
+
+.list-item {
+    margin-bottom: 8px;
+    color: #444;
+}
+
+.list-item strong {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.concluding-text {
+    margin-top: 20px;
+    font-style: italic;
+    color: #666;
+    border-top: 1px dashed 3eee;
+    padding-top: 15px;
+}
+
+.error-message {
+    color: red;
+    font-weight: bold;
+    padding: 10px;
+    border: 1px solid red;
+    background-color: #ffebeb;
+    border-radius: 5px;
+}
+
+.fallback-text {
+    margin-top: 20px;
+    font-weight: bold;
+    color: #888;
+}
+
+.raw-text {
+    background-color: #eef;
+    border: 1px dashed #ccd;
+    padding: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+}
