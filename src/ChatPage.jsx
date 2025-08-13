@@ -103,6 +103,8 @@ const ChatPage = () => {
                         </div>
                     </div>
                 </form>
+                <marquee style={{color: "white"}}>@ copyright Abdulmalik 2024</marquee>
+
             </main>
         </>
     )
